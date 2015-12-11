@@ -3776,3 +3776,10 @@ ORDER BY c.conname
   [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
   [1m[35mUser Load (0.3ms)[0m  SELECT "users"."auth_token" FROM "users"
   [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users"."auth_token" FROM "users"[0m
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2015-12-11 16:44:44 -0600
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by API::V1::UsersController#index as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 22ms (Views: 10.6ms | ActiveRecord: 2.1ms)
