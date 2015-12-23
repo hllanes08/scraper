@@ -6,7 +6,7 @@ class API::V1::SessionsController < ApplicationController
 
     if user.valid_password? user_password
       sign_in user, store: false
-      user.generate_authentication_token!
+        user.generate_authentication_token!
       user.save
       render json: user, status: 200, location: [:api, user]
     else
