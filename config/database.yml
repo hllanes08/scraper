@@ -25,4 +25,6 @@ test:
 
 production:
   <<: *default
-  database: perception_production
+  database: d7gp18gahb1d39
+  username: gewgbdyhcuoazg
+  password: Vf9K8SlQaZLAuRqSm0iT3xH9B0
