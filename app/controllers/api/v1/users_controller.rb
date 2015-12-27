@@ -2,7 +2,7 @@ class API::V1::UsersController < API::V1::BaseController
   before_action :authenticate_with_token!, only: [:update, :destroy]
   respond_to :json
   def index
-     respond_with User.all
+     render json: User.all
   end
   def show
     user = User.find(params[:id])
