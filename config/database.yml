@@ -9,6 +9,7 @@ default: &default
   encoding: unicode
   username: perception
   password: dbz20xl
+  host: localhost
   pool: 5
   timeout: 5000
 
