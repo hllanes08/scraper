@@ -8,9 +8,9 @@ class API::V1::SessionsController < ApplicationController
       sign_in user, store: false
         user.generate_authentication_token!
       user.save
-      render json: user, status: 200 #, location: [:api, user]
+      render json:  {user:user,success:true}, status: 200 #, location: [:api, user]
     else
-      render json: { errors: "Invalid email or password" }, status: 422
+      render json: { errors: "Invalid email or password",success: false }, status: 422
     end
   end
   def destroy
