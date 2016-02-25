@@ -26,6 +26,7 @@ gem 'devise'
 gem 'active_model_serializers'
 gem 'pg'
 gem "passenger", ">= 5.0.25"
+gem "redis-rails" 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 

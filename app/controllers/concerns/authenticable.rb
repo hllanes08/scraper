@@ -6,9 +6,16 @@ module Authenticable
   end
   def authenticate_with_token!
     render json: { errors: "Not authenticated" },
-                status: :unauthorized unless current_user.present?
+                status: :unauthorized unless !expired()
   end
   def user_signed_in?
     current_user.present?
+  end
+  def expired
+    if !current_user.nil?
+         return Time.now >= current_user.expires_token_at
+    else
+      return true
+    end
   end
 end

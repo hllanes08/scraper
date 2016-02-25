@@ -1,5 +1,5 @@
 class API::V1::UsersController < API::V1::BaseController
-  before_action :authenticate_with_token!, only: [:index,:show,:update, :destroy,:create]
+  before_action :authenticate_with_token!, only: [:index,:show,:update, :destroy]
   respond_to :json
   def index
      render json: User.all
