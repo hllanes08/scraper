@@ -1,17 +1,16 @@
 # == Schema Information
 #
-# Table name: actions
+# Table name: links
 #
 #  id         :integer          not null, primary key
-#  type       :string
-#  name       :string
-#  user_id    :integer
+#  page_id    :integer
+#  url        :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
 require 'rails_helper'
 
-RSpec.describe Action, type: :model do
+RSpec.describe Link, type: :model do
   pending "add some examples to (or delete) #{__FILE__}"
 end

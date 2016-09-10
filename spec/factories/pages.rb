@@ -1,20 +1,22 @@
 # == Schema Information
 #
-# Table name: actions
+# Table name: pages
 #
 #  id         :integer          not null, primary key
-#  type       :string
-#  name       :string
-#  user_id    :integer
+#  url        :string
+#  h1         :string
+#  h2         :string
+#  h3         :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
 FactoryGirl.define do
-  factory :action do
-    type ""
-name "MyString"
-user_id 1
+  factory :page do
+    url "MyString"
+h1 "MyString"
+h2 "MyString"
+h3 "MyString"
   end
 
 end
