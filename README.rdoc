@@ -12,6 +12,18 @@ Run
   rake db:migrate
   passenger start
   
+Run Test
+  bundle exec rspec spec
+  
+Endpoints
+   The api has two enpoints one for consume the url 
+        POST api/v1/scraper 
+        params as json  { "url": "formated http url" } 
+   The other for show the list of stored pages
+        GET  api/v1/scraper
+        
+   
+  
   
 
 
