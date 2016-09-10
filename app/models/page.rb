@@ -14,7 +14,7 @@ require 'restclient'
 require 'rubygems'
 require 'uri'
 class Page < ActiveRecord::Base
-    
+   has_many :tag 
     def scraper
 	begin
 	    ActiveRecord::Base.transaction do

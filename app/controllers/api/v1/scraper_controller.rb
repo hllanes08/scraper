@@ -9,7 +9,7 @@ class API::V1::ScraperController < ApplicationController
     end
     
     def index
-	render json: {Pages: Page.all}
+	render json: Page.all 
     end
     private
 
