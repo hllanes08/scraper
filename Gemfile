@@ -31,7 +31,8 @@ gem "redis-rails"
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'nokogiri'
 gem 'annotate'
-gem 'rest-client'	
+gem 'rest-client'
+gem 'factory_girl_rails'	
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

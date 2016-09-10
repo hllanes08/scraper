@@ -8,13 +8,7 @@
 #  updated_at :datetime         not null
 #  name       :string
 #
-
+require 'factory_girl'
 FactoryGirl.define do
-  factory :page do
-    url "MyString"
-h1 "MyString"
-h2 "MyString"
-h3 "MyString"
-  end
-
-end
+    
+end	 
